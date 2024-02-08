@@ -1,0 +1,57 @@
+@font-face {
+    font-family: horizon;
+    src: url(../assets/horizon.otf);
+}
+
+@font-face {
+    font-family: tommy;
+    src: url(../assets/MADE-TOMMY-Regular.otf);
+}
+
+.title-lab{
+    margin: 40px 0;
+    text-align: center;
+    font-family: horizon;
+    color: rgb(192, 0, 106);
+    text-shadow: 2px 2px 0 rgb(255,255,255);
+}
+
+h2 {
+    font-family: horizon;
+    color: white;
+    text-shadow: 0 0 20px rgb(192, 0, 106);
+}
+
+p, ul, pre {
+    font-family: tommy;
+}
+
+div {
+    background-color: rgb(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 0 600px;
+}
+ul {
+    margin:0 270px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    bottom: 0;
+}
+
+@media screen and (max-width: 1200px){
+    div {
+        margin: 0 200px;
+    }
+
+    ul {
+        margin:0 190px;
+    }
+}

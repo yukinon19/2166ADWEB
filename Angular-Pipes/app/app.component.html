@@ -1,0 +1,79 @@
+<!--Jenna Pangilinan WD301-->
+
+<!--Text-Format-Pipes-->
+<h1 class="title-lab">Midterm Lab Activity 1: Angular Pipes</h1>
+
+<div>
+  <h2>Text-Format-Pipes</h2>
+  <p><i>Date with uppercase</i> :- {{presentDate | date:'fullDate' | uppercase}}</p>
+  <p><i>Date with uppercase</i> :- {{presentDate | date:'fullDate' | lowercase}}</p>
+  <p><i>Uppercase Title</i>: {{title | uppercase}}</p>
+</div>
+
+<br>
+
+<!--Date-Pipes-->
+<div>
+  <h2>Date-Pipes</h2>
+  <p><i>Short date</i> :- {{presentDate | date:'shortDate'}}</p> 
+  <p><i>Medium date</i> :- {{presentDate | date:'mediumDate'}}</p> 
+  <p><i>Long date</i> :- {{presentDate | date:'longDate'}}</p> 
+</div>
+
+<br>
+
+<!--Currency-Pipes-->
+<div>
+  <h2>Currency-Pipes</h2>
+  <p><i>Price</i>: {{ a | currency }}</p>
+  <p><i>Japan Currency</i>: {{ b | currency: 'JPY' : 'symbol' }}</p>
+  <p><i>Philippine Currency</i>: {{ b | currency: 'PHP ' : 'code' }}</p>
+</div>
+
+<br>
+
+<!--Decimal-Pipes-->
+<div>
+  <h2>Decimal-Pipes</h2>
+  <p><i>No specific format</i>: {{deci | number}}</p>
+  <p><i>DigitInfo Parameter (4 whole and 5 deci)</i>: {{deci | number : '4.1-5'}}</p>
+  <p><i>DigitInfo Parameter (3 whole and 4 deci)</i>: {{ deci | number: '3.1-4'}}</p>
+</div>
+
+<br>
+
+<!--Json-Pipes-->
+<div>
+  <h2>Json-Pipes</h2>
+  <p><i>Display JSON:</i></p>
+  <pre>{{ data }}</pre>
+  <pre>{{ data| json }}</pre>
+</div>
+
+<br>
+
+<!--Percent-Pipes-->
+<div>
+  <h2>Percent-Pipes</h2>
+  <p><i>Percent</i>: {{c | percent}}</p>
+  <p><i>Percent (4 whole and 5 deci)</i>: {{c | percent : '4.1-5'}}</p>
+  <p><i>Percent (2 whole and 4 deci)</i>: {{c | percent : '2.1-4'}}</p>
+</div>
+
+<br>
+
+<!--Slice-Pipes-->
+<div>
+  <h2>Slice-Pipes</h2>
+  <p> <i>Used *ngFor</i>:</p>
+  <ul>
+    <li *ngFor="let i of letters | slice: 2 : 4">{{ i }}</li>
+  </ul>
+
+  <p><i>{{ name }}[0:4]</i>: '{{ name | slice: 0 : 4 }}'</p>
+  <p><i>{{ name }}[-5:-2]</i>: '{{ name | slice: -5 : -2 }}'</p>
+</div>
+
+<footer>
+  <p>&copy; 2024 Created by: Jenna Pangilinan</p>
+</footer>
