@@ -1,0 +1,111 @@
+@font-face{
+    font-family: martines;
+    src: url(../fonts/Martines.ttf);
+    }
+
+@font-face{
+    font-family: source;
+    src: url(../fonts/SourceCodePro-Regular.ttf);
+    }
+/* Reset styles */
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} */
+
+/* Container styles */
+.container {
+    top: 50%;    
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: #000 solid 3px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: source;
+}
+
+.title {
+    font-family: martines;
+    font-size: 50px;
+    text-align: center;
+}
+
+/* Input group styles */
+.input-group {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Input and button styles */
+input[type="text"],
+button {
+    width: calc(25% - 10px);
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    font-family: source;
+}
+
+input {
+    margin: 20px;
+    font-family: source;
+}
+
+/* Button styles */
+button {
+    background-color: #db3a48;
+    color: #fff;
+    cursor: pointer;
+    width: 100px;
+}
+
+/* Button hover styles */
+button:hover {
+    background-color: #b9313c;
+}
+
+.add-button {
+    background-color: #ae35e6;
+    margin-left: 30px;
+    width: 100px;
+}
+
+.add-button:hover {
+    background-color: #8f2cbd;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table header styles */
+thead {
+    background-color: #000000;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Table header cell and body cell styles */
+thead th,
+tbody td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Hover effect for table rows */
+tbody tr:hover {
+    background-color: #f2f2f2;
+}
