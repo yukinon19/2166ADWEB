@@ -53,9 +53,19 @@ app.post('/api/books/AddBook', multer().none(), async (req,res) => {
     }
 });
 
-app.delete('/api/books/DeleteBook', (req,res) => {
-    database.collection("books").deleteOne({
-        id:req.query.id
-    });
-    res.json("Deleted successfully!");
-})
+app.delete('/api/books/DeleteBook', async (req, res) => {
+    try {
+        const result = await database.collection("books").deleteOne({
+            id: parseInt(req.query.id) 
+        });
+
+        if (result.deletedCount === 1) {
+            res.json("Deleted successfully!");
+        } else {
+            res.status(404).json({ error: "Book not found" });
+        }
+    } catch (error) {
+        console.error("Error deleting book:", error);
+        res.status(500).json({ error: "Failed to delete book" });
+    }
+});
